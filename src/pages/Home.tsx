@@ -1,4 +1,3 @@
-import React from "react";
 import { FaRegCommentDots } from "react-icons/fa";
 import { HiOutlineSaveAs } from "react-icons/hi";
 import { GiSwordsEmblem } from "react-icons/gi";

@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import { renderToPipeableStream } from "react-dom/server";
 import { useLocation } from "react-router-dom";
 import Lottie from "lottie-react";
 import animationData from "../assets/celebrate.json";
