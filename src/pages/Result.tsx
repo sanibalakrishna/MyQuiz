@@ -10,23 +10,16 @@ function Result() {
   const params = new URLSearchParams(search);
   const report = params.get("report");
   const total = params.get("total");
-  const tempreport = report && parseInt(report);
-  const temptotal = total && parseInt(total);
-  const tempresult =
+  const tempreport: any = report && parseInt(report);
+  const temptotal: any = total && parseInt(total);
+  const tempresult: any =
     tempreport != null && temptotal != null && tempreport / temptotal;
-  const [isStopped, setIsStopped] = useState<boolean>(false);
-
-  const onAnimationComplete = () => {
-    setIsStopped(true);
-  };
 
   return (
     <div className=" h-screen w-screen bg-[#860da2] flex justify-center ">
       <Lottie
         animationData={animationData}
-        isStopped={isStopped}
         loop={false}
-        onComplete={onAnimationComplete}
         style={{ zIndex: "1000px" }}
       />
       <div className="flex justify-center absolute top-0">
